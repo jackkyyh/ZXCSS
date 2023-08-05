@@ -1,0 +1,6 @@
+\usepackage{amsfonts, mathtools, braket}
+
+\newcommand{\eqrm}{E_{qrm}}
+\newcommand{\eex}{E_{ex}}
+\newcommand{\esub}{E_{sub}}
+\newcommand{\est}{E_{steane}}

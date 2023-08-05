@@ -1,0 +1,44 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (253) at (-1.5, 2.75) {};
+		\node [style=none] (254) at (-1.5, 0.5) {};
+		\node [style=none] (255) at (0, 2.75) {};
+		\node [style=none] (256) at (0, 0.5) {};
+		\node [style=none] (257) at (-3, 0.75) {};
+		\node [style=none] (258) at (-9.25, 0.75) {};
+		\node [style=none] (259) at (-9.25, 3) {};
+		\node [style=none] (260) at (-3, 3) {};
+		\node [style=none] (261) at (-3.5, 2) {$\vdots$};
+		\node [style=none] (262) at (-0.75, 1.5) {$\vdots$};
+		\node [style=none] (263) at (-1.5, 2) {};
+		\node [style=none] (264) at (0, 2) {};
+		\node [style=none] (265) at (-1.5, 4) {};
+		\node [style=none] (266) at (-1.5, 0) {};
+		\node [style=none] (267) at (-3, 0) {};
+		\node [style=none] (268) at (-3, 4) {};
+		\node [style=none] (269) at (-2.25, 2) {$E$};
+		\node [style=none] (270) at (-1.5, 3.5) {};
+		\node [style=none] (271) at (0, 3.5) {};
+		\node [style=green small] (273) at (-4.55, 3) {};
+		\node [style=green small] (274) at (-8, 3) {};
+		\node [style=red small] (275) at (-6.275, 3) {};
+		\node [style={green small (text)}] (276) at (-8, 4.5) {$\pi/2$};
+		\node [style={red small (text)}] (277) at (-6.275, 4.5) {$\pi/2$};
+		\node [style={green small (text)}] (278) at (-4.55, 4.5) {$\pi/2$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=edge] (258.center) to (257.center);
+		\draw [style=edge] (253.center) to (255.center);
+		\draw [style=edge] (254.center) to (256.center);
+		\draw (259.center) to (260.center);
+		\draw [style=edge] (263.center) to (264.center);
+		\draw (265.center) to (268.center);
+		\draw (268.center) to (267.center);
+		\draw (267.center) to (266.center);
+		\draw (266.center) to (265.center);
+		\draw [style=edge] (270.center) to (271.center);
+		\draw (276) to (274);
+		\draw (277) to (275);
+		\draw (278) to (273);
+	\end{pgfonlayer}
+\end{tikzpicture}

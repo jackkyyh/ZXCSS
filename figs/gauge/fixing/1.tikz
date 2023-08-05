@@ -1,0 +1,70 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, label={west:2}] (0) at (-6.25, 6.25) {};
+		\node [style=none, label={west:15}] (1) at (-6.25, -2) {};
+		\node [style=none] (2) at (-6.25, 8.5) {};
+		\node [style=none] (4) at (-11, -1.25) {};
+		\node [style=none] (5) at (-11, 8.5) {};
+		\node [style=none] (6) at (-6.25, -3.5) {};
+		\node [style=none, label={west: 1}] (8) at (-6.25, 7.5) {};
+		\node [style=none] (9) at (-11, 5) {};
+		\node [style=none] (10) at (-13.75, 5) {};
+		\node [style=none] (11) at (10.75, 7.5) {};
+		\node [style=none] (12) at (10.75, -2) {};
+		\node [style=none] (13) at (5.5, -0.75) {$\vdots$};
+		\node [style=none] (18) at (10.75, 6.25) {};
+		\node [style=none, label={west:3}] (19) at (-6.25, 5) {};
+		\node [style=none] (20) at (10.75, 5) {};
+		\node [style=none, label={west:4}] (21) at (-6.25, 3.75) {};
+		\node [style=none] (22) at (10.75, 3.75) {};
+		\node [style=none, label={west:5}] (23) at (-6.25, 2.5) {};
+		\node [style=none] (24) at (10.75, 2.5) {};
+		\node [style=none, label={west:6}] (25) at (-6.25, 1.25) {};
+		\node [style=none] (26) at (10.75, 1.25) {};
+		\node [style=none, label={west:7}] (27) at (-6.25, 0) {};
+		\node [style=none] (28) at (10.75, 0) {};
+		\node [style=red] (29) at (-4.75, 7.5) {};
+		\node [style=red] (30) at (-4.75, 0) {};
+		\node [style=red] (31) at (-4.75, 5) {};
+		\node [style=red] (32) at (-4.75, 2.5) {};
+		\node [style={green small (text)}] (34) at (-3.5, 9) {$k_1\pi$};
+		\node [style=red] (35) at (-2.25, 6.25) {};
+		\node [style=red] (36) at (-2.25, 5) {};
+		\node [style=red] (37) at (-2.25, 1.25) {};
+		\node [style=red] (38) at (-2.25, 0) {};
+		\node [style={green small (text)}] (40) at (-0.25, 9) {$k_2\pi$};
+		\node [style=red] (41) at (0.25, 2.5) {};
+		\node [style=red] (42) at (0.25, 1.25) {};
+		\node [style=red] (43) at (0.25, 0) {};
+		\node [style=red] (44) at (0.25, 3.75) {};
+		\node [style={green small (text)}] (46) at (3, 9) {$k_3\pi$};
+		\node [style=none] (103) at (-6.75, -0.75) {$\vdots$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2.center) to (6.center);
+		\draw (6.center) to (4.center);
+		\draw (4.center) to (5.center);
+		\draw (5.center) to (2.center);
+		\draw [line width=1.7pt, in=180, out=0] (10.center) to (9.center);
+		\draw (8.center) to (11.center);
+		\draw (1.center) to (12.center);
+		\draw (0.center) to (18.center);
+		\draw (19.center) to (20.center);
+		\draw (21.center) to (22.center);
+		\draw (23.center) to (24.center);
+		\draw (25.center) to (26.center);
+		\draw (27.center) to (28.center);
+		\draw (29) to (34);
+		\draw (31) to (34);
+		\draw (32) to (34);
+		\draw (30) to (34);
+		\draw (35) to (40);
+		\draw (36) to (40);
+		\draw (37) to (40);
+		\draw (38) to (40);
+		\draw (41) to (46);
+		\draw (42) to (46);
+		\draw (43) to (46);
+		\draw (44) to (46);
+	\end{pgfonlayer}
+\end{tikzpicture}
