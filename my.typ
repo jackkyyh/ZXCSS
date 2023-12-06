@@ -22,3 +22,6 @@
 //     "eular": $limits(=)^sscript(#text[eular])$)
 
 #let eqt(sup, sub: none) = $limits(=)^sscript(#sup)_sscript(#text[#sub])$
+
+
+#let qrcode = align(center)[#grid(columns: 1, image("figs/qr.svg", width: 8em), [arXiv:2307.02437])]
