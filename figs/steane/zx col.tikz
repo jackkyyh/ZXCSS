@@ -1,0 +1,48 @@
+\begin{tikzpicture}[tikzfig]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=red, label={[label distance=-4]20: 1}] (1) at (0.75, 7.75) {};
+		\node [style=red, label={[label distance=-4]20: 2}] (2) at (0.75, 5) {};
+		\node [style=red, label={[label distance=-4]20: 3}] (3) at (0.75, 2.25) {};
+		\node [style=red, label={[label distance=-4]20: 4}] (4) at (0.75, -0.25) {};
+		\node [style=red, label={[label distance=-4]20: 5}] (5) at (0.75, -3) {};
+		\node [style=red, label={[label distance=-4]20: 6}] (6) at (0.75, -5.75) {};
+		\node [style=red, label={[label distance=-4]20: 7}] (7) at (0.75, -8.5) {};
+		\node [style=green] (8) at (-3.75, 0.75) {};
+		\node [style=green] (9) at (-3.75, -2.5) {};
+		\node [style=green] (10) at (-3.75, -5.75) {};
+		\node [style=green] (11) at (-3.75, 4) {};
+		\node [style=none] (12) at (-6.25, 4) {};
+		\node [style=none] (13) at (3.75, 5) {};
+		\node [style=none] (14) at (3.75, -5.75) {};
+		\node [style=none] (15) at (3.75, -0.25) {};
+		\node [style=none] (16) at (3.75, -3) {};
+		\node [style=none] (17) at (3.75, 7.75) {};
+		\node [style=none] (18) at (3.75, -8.5) {};
+		\node [style=none] (19) at (3.75, 2.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=edge] (2) to (8);
+		\draw [style=edge] (8) to (6);
+		\draw [style=edge] (8) to (7);
+		\draw [style=edge] (8) to (3);
+		\draw [style=edge] (3) to (9);
+		\draw [style=edge] (9) to (7);
+		\draw [style=edge] (9) to (5);
+		\draw [style=edge] (9) to (1);
+		\draw [style=edge] (10) to (7);
+		\draw [style=edge] (10) to (6);
+		\draw [style=edge] (10) to (5);
+		\draw [style=edge] (10) to (4);
+		\draw [style=edge] (1) to (11);
+		\draw [style=edge] (11) to (5);
+		\draw [style=edge] (11) to (4);
+		\draw [style=edge] (12.center) to (11);
+		\draw (2) to (13.center);
+		\draw (6) to (14.center);
+		\draw (4) to (15.center);
+		\draw (5) to (16.center);
+		\draw (7) to (18.center);
+		\draw (1) to (17.center);
+		\draw (3) to (19.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
