@@ -1,0 +1,244 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=green small] (49) at (-8.5, 2.5) {};
+		\node [style=green small] (50) at (-11.25, -0.25) {};
+		\node [style=green small] (51) at (-10.75, -2.25) {};
+		\node [style=green small] (52) at (-5.75, -1.5) {};
+		\node [style=none, label={below:\scriptsize 1}] (19) at (-12.5, -3.5) {};
+		\node [style=none, label={above:\scriptsize 2}] (20) at (-8, 5) {};
+		\node [style=none, label={left:\scriptsize 3}] (21) at (-10.25, 1) {};
+		\node [style=none, label={below:\scriptsize 4}] (22) at (-3.5, -3.5) {};
+		\node [style=none, label={below:\scriptsize 5}] (23) at (-8, -3.5) {};
+		\node [style=none, label={right:\scriptsize 6}] (24) at (-5.75, 1) {};
+		\node [style=none, label={right:\scriptsize 7}] (25) at (-8, -0.5) {};
+		\node [style=none, label={left:\scriptsize 8}] (26) at (-13.25, 1) {};
+		\node [style=none, label={left:\scriptsize 9}] (27) at (-12.925, -1.05) {};
+		\node [style=none, label={above:\scriptsize 10}] (28) at (-10.8, 2.825) {};
+		\node [style=none, label={below:\scriptsize 11}] (29) at (-11.25, 1) {};
+		\node [style=none, label={above:\scriptsize 12}] (30) at (-9, -1.25) {};
+		\node [style=none, label={below:\scriptsize 13}] (31) at (-9.975, -1.85) {};
+		\node [style=none, label={above:\scriptsize 14}] (32) at (-8.65, 1) {};
+		\node [style=none, label={left:\scriptsize 15}] (33) at (-9.75, -0.25) {};
+		\node [style=green small] (53) at (11, 2.75) {};
+		\node [style=green small] (55) at (8.75, -1.725) {};
+		\node [style=green small] (56) at (13.25, -1.725) {};
+		\node [style=none, label={below:\scriptsize 1}] (57) at (6.5, -3.25) {};
+		\node [style=none, label={above:\scriptsize 2}] (58) at (11, 4.5) {};
+		\node [style=none, label={left:\scriptsize 3}] (59) at (8.75, 1.1) {};
+		\node [style=none, label={below:\scriptsize 4}] (60) at (15.5, -3.25) {};
+		\node [style=none, label={below:\scriptsize 5}] (61) at (11, -3.25) {};
+		\node [style=none, label={right:\scriptsize 6}] (62) at (13.25, 1.1) {};
+		\node [style=none, label={right:\scriptsize 7}] (63) at (11, -0.25) {};
+		\node [style=green small] (72) at (3.75, 3.625) {};
+		\node [style=green small] (73) at (1.5, 0.375) {};
+		\node [style=green small] (74) at (1.5, -1.875) {};
+		\node [style=green small] (75) at (5.25, -0.375) {};
+		\node [style=none, label={left:\scriptsize 8}] (83) at (-0.5, 1.625) {};
+		\node [style=none, label={left:\scriptsize 9}] (84) at (-0.175, -0.425) {};
+		\node [style=none, label={above:\scriptsize 10}] (85) at (1.95, 3.45) {};
+		\node [style=none, label={below:\scriptsize 11}] (86) at (1.5, 1.625) {};
+		\node [style=none, label={above:\scriptsize 12}] (87) at (3.75, -0.625) {};
+		\node [style=none, label={below:\scriptsize 13}] (88) at (2.775, -1.225) {};
+		\node [style=none, label={above:\scriptsize 14}] (89) at (4.1, 1.625) {};
+		\node [style=none, label={left:\scriptsize 15}] (90) at (3, 0.375) {};
+		\node [style=none] (91) at (-3.25, 0) {$=$};
+		\node [style=none] (92) at (-1.25, 4.25) {};
+		\node [style=none] (93) at (5.75, 4.25) {};
+		\node [style=none] (94) at (5.75, -2.625) {};
+		\node [style=none] (95) at (-1.25, -2.625) {};
+		\node [style=none] (96) at (6, 5.5) {};
+		\node [style=none] (97) at (16, 5.5) {};
+		\node [style=none] (98) at (16, -4.125) {};
+		\node [style=none] (99) at (6, -4.125) {};
+		\node [style=red small, label={above:\scriptsize $\overline{1}$}] (103) at (7.25, 3.25) {};
+		\node [style=red small, label={above:\scriptsize $\overline{2}$}] (104) at (7.25, -0.75) {};
+		\node [style=red small, label={above:\scriptsize $\overline{3}$}] (105) at (6.75, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [fill=lime, fill opacity=0.3, style=white] (23.center)
+			 to (22.center)
+			 to (24.center)
+			 to (32.center)
+			 to (33.center)
+			 to (31.center)
+			 to cycle
+			 to cycle;
+		\draw [fill=cyan, fill opacity=0.3, style=white] (23.center)
+			 to (25.center)
+			 to (21.center)
+			 to (29.center)
+			 to (27.center)
+			 to (19.center)
+			 to cycle;
+		\draw [fill=red, fill opacity=0.3, style=white] (33.center)
+			 to (29.center)
+			 to (28.center)
+			 to (20.center)
+			 to (24.center)
+			 to (25.center)
+			 to cycle;
+		\draw [fill=red, fill opacity=0.3, style=white] (26.center)
+			 to (28.center)
+			 to (32.center)
+			 to (30.center)
+			 to (31.center)
+			 to (27.center)
+			 to cycle;
+		\draw [fill=lime, fill opacity=0.3, style=white] (23.center)
+			 to (22.center)
+			 to (24.center)
+			 to (25.center)
+			 to cycle;
+		\draw [fill=cyan, fill opacity=0.3, style=white] (25.center)
+			 to (23.center)
+			 to (19.center)
+			 to (21.center)
+			 to cycle;
+		\draw [fill=red, fill opacity=0.3, style=white] (20.center)
+			 to (24.center)
+			 to (25.center)
+			 to (21.center)
+			 to cycle;
+		\draw [fill=orange, fill opacity=0.3, style=white] (26.center)
+			 to (28.center)
+			 to (29.center)
+			 to (27.center)
+			 to cycle;
+		\draw [style=white, in=180, out=0] (29.center) to (21.center);
+		\draw [style=white] (28.center) to (20.center);
+		\draw [style=white] (26.center) to (27.center);
+		\draw [style=white] (26.center) to (30.center);
+		\draw [style=white] (30.center) to (22.center);
+		\draw [style=white] (20.center) to (21.center);
+		\draw [style=white] (31.center) to (30.center);
+		\draw (49) to (28.center);
+		\draw (49) to (20.center);
+		\draw (49) to (24.center);
+		\draw (49) to (25.center);
+		\draw (49) to (32.center);
+		\draw (49) to (33.center);
+		\draw (49) to (21.center);
+		\draw (49) to (29.center);
+		\draw (50) to (26.center);
+		\draw (50) to (27.center);
+		\draw (50) to (29.center);
+		\draw (50) to (28.center);
+		\draw (50) to (31.center);
+		\draw (50) to (32.center);
+		\draw (33.center) to (50);
+		\draw (50) to (30.center);
+		\draw (51) to (19.center);
+		\draw (51) to (23.center);
+		\draw (51) to (21.center);
+		\draw (51) to (25.center);
+		\draw (27.center) to (51);
+		\draw (51) to (31.center);
+		\draw (51) to (33.center);
+		\draw (52) to (23.center);
+		\draw (52) to (22.center);
+		\draw (52) to (31.center);
+		\draw (52) to (30.center);
+		\draw (25.center) to (52);
+		\draw (52) to (33.center);
+		\draw (52) to (24.center);
+		\draw (52) to (32.center);
+		\draw [fill=lime, fill opacity=0.3, style=white] (61.center) to (60.center);
+		\draw [fill=lime, fill opacity=0.3, style=white] (60.center) to (62.center);
+		\draw [fill=lime, fill opacity=0.3, style=white, loop] (61.center) to ();
+		\draw [fill=cyan, fill opacity=0.3, style=white] (61.center) to (63.center);
+		\draw [fill=cyan, fill opacity=0.3, style=white] (63.center) to (59.center);
+		\draw [fill=cyan, fill opacity=0.3, style=white] (57.center) to (61.center);
+		\draw [fill=red, fill opacity=0.3, style=white] (58.center) to (62.center);
+		\draw [fill=red, fill opacity=0.3, style=white] (62.center) to (63.center);
+		\draw [fill=lime, fill opacity=0.3, style=white] (61.center)
+			 to (60.center)
+			 to (62.center)
+			 to (63.center)
+			 to cycle;
+		\draw [fill=cyan, fill opacity=0.3, style=white] (63.center)
+			 to (61.center)
+			 to (57.center)
+			 to (59.center)
+			 to cycle;
+		\draw [fill=red, fill opacity=0.3, style=white] (58.center)
+			 to (62.center)
+			 to (63.center)
+			 to (59.center)
+			 to cycle;
+		\draw [style=white] (58.center) to (59.center);
+		\draw (53) to (58.center);
+		\draw (53) to (62.center);
+		\draw (53) to (63.center);
+		\draw (53) to (59.center);
+		\draw (55) to (57.center);
+		\draw (55) to (61.center);
+		\draw (55) to (59.center);
+		\draw (55) to (63.center);
+		\draw (56) to (61.center);
+		\draw (56) to (60.center);
+		\draw (63.center) to (56);
+		\draw (56) to (62.center);
+		\draw [fill=lime, fill opacity=0.3, style=white] (89.center) to (90.center);
+		\draw [fill=lime, fill opacity=0.3, style=white] (90.center) to (88.center);
+		\draw [fill=cyan, fill opacity=0.3, style=white] (86.center) to (84.center);
+		\draw [fill=red, fill opacity=0.3, style=white] (90.center) to (86.center);
+		\draw [fill=red, fill opacity=0.3, style=white] (86.center) to (85.center);
+		\draw [fill=red, fill opacity=0.3, style=white] (83.center)
+			 to (85.center)
+			 to (89.center)
+			 to (87.center)
+			 to (88.center)
+			 to (84.center)
+			 to cycle;
+		\draw [fill=orange, fill opacity=0.3, style=white] (83.center)
+			 to (85.center)
+			 to (86.center)
+			 to (84.center)
+			 to cycle;
+		\draw [style=white] (83.center) to (84.center);
+		\draw [style=white] (83.center) to (87.center);
+		\draw [style=white] (88.center) to (87.center);
+		\draw (72) to (85.center);
+		\draw (72) to (89.center);
+		\draw (72) to (90.center);
+		\draw (72) to (86.center);
+		\draw (73) to (83.center);
+		\draw (73) to (84.center);
+		\draw (73) to (86.center);
+		\draw (73) to (85.center);
+		\draw (73) to (88.center);
+		\draw (73) to (89.center);
+		\draw (90.center) to (73);
+		\draw (73) to (87.center);
+		\draw (84.center) to (74);
+		\draw (74) to (88.center);
+		\draw (74) to (90.center);
+		\draw (75) to (88.center);
+		\draw (75) to (87.center);
+		\draw (75) to (90.center);
+		\draw (75) to (89.center);
+		\draw (74) to (55);
+		\draw (75) to (56);
+		\draw (53) to (72);
+		\draw [style=white] (90.center) to (88.center);
+		\draw [style=white] (86.center) to (90.center);
+		\draw [style=white] (90.center) to (89.center);
+		\draw [style=white] (29.center) to (33.center);
+		\draw [style=white] (33.center) to (32.center);
+		\draw [style=white] (33.center) to (31.center);
+		\draw [style=white] (31.center) to (23.center);
+		\draw [style=white] (32.center) to (24.center);
+		\draw (51) to (29.center);
+		\draw (74) to (86.center);
+		\draw [style=blue box] (92.center)
+			 to (93.center)
+			 to (94.center)
+			 to (95.center)
+			 to cycle;
+		\draw [style=violet box] (99.center)
+			 to (96.center)
+			 to (97.center)
+			 to (98.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

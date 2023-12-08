@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=rec] (0) at (-0.25, 0) {$E$};
+		\node [style=none] (1) at (0.5, 0.75) {};
+		\node [style=none] (2) at (0.5, 0) {};
+		\node [style=none] (3) at (0.5, -0.75) {};
+		\node [style=none] (4) at (2, 0.75) {};
+		\node [style=none] (5) at (2, 0) {};
+		\node [style=none] (6) at (2, -0.75) {};
+		\node [style=none] (7) at (-1, 0.5) {};
+		\node [style=none] (8) at (-3, 0.5) {};
+		\node [style=none] (9) at (-1, -0.5) {};
+		\node [style=none] (10) at (-3, -0.5) {};
+		\node [style=red small] (11) at (-2, 0.5) {};
+		\node [style=none] (12) at (-2.5, 1.75) {};
+		\node [style=rec] (13) at (6.5, 0) {$E$};
+		\node [style=none] (14) at (7.25, 0.75) {};
+		\node [style=none] (15) at (7.25, 0) {};
+		\node [style=none] (16) at (7.25, -0.75) {};
+		\node [style=none] (17) at (9.75, 0.75) {};
+		\node [style=none] (18) at (9.75, 0) {};
+		\node [style=none] (19) at (9.75, -0.75) {};
+		\node [style=none] (20) at (5.75, 0.5) {};
+		\node [style=none] (21) at (4.5, 0.5) {};
+		\node [style=none] (22) at (5.75, -0.5) {};
+		\node [style=none] (23) at (4.5, -0.5) {};
+		\node [style=red small] (25) at (8.5, 0.75) {};
+		\node [style=red small] (26) at (8.5, 0) {};
+		\node [style=none] (29) at (3.25, 0) {=};
+		\node [style=green small] (30) at (7.75, 1.75) {};
+		\node [style=none] (31) at (7.25, 3) {};
+		\node [style=none] (32) at (8, 1.25) {};
+		\node [style=none] (33) at (8, -1.5) {};
+		\node [style=none] (34) at (9, 1.25) {};
+		\node [style=none] (35) at (9, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=edge] (8.center) to (7.center);
+		\draw [style=edge] (10.center) to (9.center);
+		\draw [style=edge] (1.center) to (4.center);
+		\draw [style=edge] (2.center) to (5.center);
+		\draw [style=edge] (3.center) to (6.center);
+		\draw [style=edge, in=-30, out=135] (11) to (12.center);
+		\draw [style=edge] (21.center) to (20.center);
+		\draw [style=edge] (23.center) to (22.center);
+		\draw [style=edge] (14.center) to (17.center);
+		\draw [style=edge] (15.center) to (18.center);
+		\draw [style=edge] (16.center) to (19.center);
+		\draw [style=edge, in=-30, out=135] (30) to (31.center);
+		\draw (25) to (30);
+		\draw (26) to (30);
+		\draw [style=blue box] (32.center) to (34.center);
+		\draw [style=blue box] (34.center) to (35.center);
+		\draw [style=blue box] (35.center) to (33.center);
+		\draw [style=blue box] (33.center) to (32.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

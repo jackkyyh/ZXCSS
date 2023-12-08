@@ -54,7 +54,7 @@
 		\draw (117) to (119.center);
 		\draw (121) to (122.center);
 		\draw (121) to (123.center);
-		\draw (125.center) to (117);
+		\draw [style=thick width] (125.center) to (117);
 		\draw (65) to (129.center);
 		\draw (65) to (130.center);
 		\draw (35) to (126.center);

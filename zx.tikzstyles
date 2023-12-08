@@ -6,7 +6,7 @@
 % Node styles
 \tikzstyle{green}=[fill={rgb,255: red,216; green,248; blue,216}, draw=black, shape=circle]
 \tikzstyle{red}=[fill={rgb,255: red,232; green,165; blue,165}, draw=black, shape=circle]
-\tikzstyle{rec}=[fill=white, draw=black, shape=rectangle, minimum width=0.75cm, minimum height=1cm]
+\tikzstyle{rec}=[fill=none, draw=black, shape=rectangle, minimum width=0.75cm, minimum height=1cm]
 \tikzstyle{green (text)}=[fill={rgb,255: red,216; green,248; blue,216}, draw=black, shape=circle, inner sep=0pt, minimum size=0.35cm]
 \tikzstyle{red (text)}=[fill={rgb,255: red,232; green,165; blue,165}, draw=black, shape=circle, inner sep=0pt, minimum size=0.35cm]
 \tikzstyle{h gate}=[fill={rgb,255: red,255; green,255; blue,130}, draw=black, shape=rectangle]
@@ -29,4 +29,4 @@
 \tikzstyle{white}=[-, draw=white]
 \tikzstyle{arrow}=[-, ->=stealth]
 \tikzstyle{red box}=[-, dashed, draw={rgb,255: red,191; green,0; blue,64}]
-\tikzstyle{thick width}=[-, line width=1.7]
+\tikzstyle{thick width}=[-, line width=1.0]

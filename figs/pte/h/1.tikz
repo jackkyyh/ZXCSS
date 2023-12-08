@@ -1,36 +1,34 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (182) at (-13, 2.75) {};
-		\node [style=none] (183) at (-13, 0.5) {};
-		\node [style=none] (184) at (-11.5, 2.75) {};
-		\node [style=none] (185) at (-11.5, 0.5) {};
-		\node [style=none] (186) at (-14.5, 0.75) {};
-		\node [style=none] (187) at (-17.25, 0.75) {};
-		\node [style=none] (198) at (-17.25, 3) {};
-		\node [style=none] (199) at (-14.5, 3) {};
-		\node [style=none] (204) at (-15, 2) {$\vdots$};
-		\node [style=none] (206) at (-12.25, 1.5) {$\vdots$};
-		\node [style=none] (208) at (-13, 2) {};
-		\node [style=none] (209) at (-11.5, 2) {};
-		\node [style=none] (211) at (-13, 4) {};
-		\node [style=none] (212) at (-13, 0) {};
-		\node [style=none] (213) at (-14.5, 0) {};
-		\node [style=none] (214) at (-14.5, 4) {};
-		\node [style=none] (236) at (-13.75, 2) {$E$};
-		\node [style=none] (246) at (-13, 3.5) {};
-		\node [style=none] (247) at (-11.5, 3.5) {};
-		\node [style=h gate] (252) at (-16, 3) {$H$};
+		\node [style=h gate] (252) at (-15.75, -1.75) {$H$};
+		\node [style=none] (254) at (-13, -1.25) {};
+		\node [style=none] (255) at (-13, -3.5) {};
+		\node [style=none] (256) at (-11.5, -1.25) {};
+		\node [style=none] (257) at (-11.5, -3.5) {};
+		\node [style=none] (258) at (-14.5, -3) {};
+		\node [style=none] (259) at (-17, -3) {};
+		\node [style=none] (260) at (-17, -1.75) {};
+		\node [style=none] (261) at (-14.5, -1.75) {};
+		\node [style=none] (262) at (-13, -2) {};
+		\node [style=none] (263) at (-11.5, -2) {};
+		\node [style=none] (264) at (-13, -0.75) {};
+		\node [style=none] (265) at (-13, -4) {};
+		\node [style=none] (266) at (-14.5, -4) {};
+		\node [style=none] (267) at (-14.5, -0.75) {};
+		\node [style=none] (268) at (-13.75, -2.25) {$E$};
+		\node [style=none] (269) at (-13, -2.75) {};
+		\node [style=none] (270) at (-11.5, -2.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=edge] (187.center) to (186.center);
-		\draw [style=edge] (182.center) to (184.center);
-		\draw [style=edge] (183.center) to (185.center);
-		\draw (198.center) to (199.center);
-		\draw [style=edge] (208.center) to (209.center);
-		\draw (211.center) to (214.center);
-		\draw (214.center) to (213.center);
-		\draw (213.center) to (212.center);
-		\draw (212.center) to (211.center);
-		\draw [style=edge] (246.center) to (247.center);
+		\draw [style=edge] (259.center) to (258.center);
+		\draw [style=edge] (254.center) to (256.center);
+		\draw [style=edge] (255.center) to (257.center);
+		\draw (260.center) to (261.center);
+		\draw [style=edge] (262.center) to (263.center);
+		\draw (264.center) to (267.center);
+		\draw (267.center) to (266.center);
+		\draw (266.center) to (265.center);
+		\draw (265.center) to (264.center);
+		\draw [style=edge] (269.center) to (270.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

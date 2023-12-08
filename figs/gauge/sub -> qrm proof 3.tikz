@@ -39,7 +39,7 @@
 		\node [style=none] (335) at (28, -1) {};
 		\node [style=none] (336) at (28, -2) {};
 		\node [style=none] (337) at (28.5, -1.35) {$\vdots$};
-		\node [style=none] (338) at (22.75, 0) {};
+		\node [style=none] (338) at (25, 0) {};
 		\node [style=red] (339) at (28.25, 7.25) {};
 		\node [style=red] (340) at (28.75, 6.75) {};
 		\node [style=red] (341) at (28.5, 6) {};

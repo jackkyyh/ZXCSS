@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (14) at (1.25, 0) {};
+		\node [style=none] (17) at (4.25, 0) {};
+		\node [style=red small] (24) at (2.75, 0) {};
+		\node [style=none] (29) at (0, 0) {=};
+		\node [style=none] (30) at (-4.25, 0) {};
+		\node [style=none] (31) at (-1.25, 0) {};
+		\node [style={red small (text)}] (58) at (-2.75, 0) {$\alpha$};
+		\node [style=none] (66) at (-3, 1.25) {};
+		\node [style=none] (67) at (-3.75, 0.75) {};
+		\node [style={red small (text)}] (71) at (2.75, 1.25) {$\alpha$};
+		\node [style=none] (72) at (2.5, 2.5) {};
+		\node [style=none] (73) at (1.75, 2) {};
+		\node [style=none] (89) at (-3.5, 1.2) {$\rotatebox{30}{\textbf{...}}$};
+		\node [style=none] (90) at (2, 2.45) {$\rotatebox{30}{\textbf{...}}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=edge] (14.center) to (17.center);
+		\draw (30.center) to (31.center);
+		\draw [style=edge, line width=1.3pt, in=0, out=150, looseness=1.25] (58) to (67.center);
+		\draw [style=edge, line width=1.3pt, in=-30, out=105, looseness=1.50] (58) to (66.center);
+		\draw [style=edge, line width=1.3pt, in=0, out=150, looseness=1.25] (71) to (73.center);
+		\draw [style=edge, line width=1.3pt, in=-30, out=105, looseness=1.50] (71) to (72.center);
+		\draw (24) to (71);
+	\end{pgfonlayer}
+\end{tikzpicture}

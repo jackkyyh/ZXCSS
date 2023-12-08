@@ -39,7 +39,7 @@
 		\node [style=none] (387) at (45.5, 1.5) {};
 		\node [style=none] (388) at (45.5, 0.5) {};
 		\node [style=none] (389) at (46, 1.15) {$\vdots$};
-		\node [style=none] (390) at (40.25, 2.5) {};
+		\node [style=none] (390) at (41.75, 2.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (351) to (352.center);

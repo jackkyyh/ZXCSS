@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none, label={below:\tiny 1}] (1) at (-3, -3) {};
+		\node [style=none, label={above:\tiny 2}] (2) at (0, 2) {};
+		\node [style=none, label={left:\tiny 3}] (3) at (-1.5, -0.5) {};
+		\node [style=none, label={below:\tiny 4}] (4) at (3, -3) {};
+		\node [style=none, label={below:\tiny 5}] (5) at (0, -3) {};
+		\node [style=none, label={right:\tiny 6}] (6) at (1.5, -0.5) {};
+		\node [style=none, label={right:\tiny 7}] (7) at (0, -1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [fill=cyan, fill opacity=0.3] (5.center)
+			 to (7.center)
+			 to (3.center)
+			 to (1.center)
+			 to cycle;
+		\draw [fill=lime, fill opacity=0.3] (5.center)
+			 to (4.center)
+			 to (6.center)
+			 to (7.center)
+			 to cycle;
+		\draw [fill=cyan, fill opacity=0.3] (7.center)
+			 to (5.center)
+			 to (1.center)
+			 to (3.center)
+			 to cycle;
+		\draw [fill=red, fill opacity=0.3] (2.center)
+			 to (6.center)
+			 to (7.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=edge] (2.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -6,12 +6,10 @@
 		\node [style=none] (85) at (15.25, 1.5) {};
 		\node [style=none] (86) at (15.25, 0.75) {};
 		\node [style=none] (87) at (15.25, -0.75) {};
-		\node [style=none] (92) at (11, -0.5) {};
-		\node [style=none] (93) at (9.5, -0.5) {};
-		\node [style=none] (94) at (9.5, 1.25) {};
-		\node [style=none] (95) at (11, 1.25) {};
-		\node [style=none] (96) at (10.25, 0.5) {$\vdots$};
-		\node [style=none] (97) at (14.5, 0.25) {$\vdots$};
+		\node [style=none] (92) at (11, -0.25) {};
+		\node [style=none] (93) at (9.5, -0.25) {};
+		\node [style=none] (94) at (9.5, 1) {};
+		\node [style=none] (95) at (11, 1) {};
 		\node [style=none] (99) at (12.5, 2) {};
 		\node [style=none] (100) at (12.5, -1.25) {};
 		\node [style=none] (101) at (11, -1.25) {};
@@ -20,6 +18,8 @@
 		\node [style={green small (text)}] (109) at (14.5, 2.5) {$a\pi$};
 		\node [style=red small] (110) at (13.5, 1.5) {};
 		\node [style=red small] (111) at (13.5, 0.75) {};
+		\node [style=none] (112) at (12.5, 0) {};
+		\node [style=none] (113) at (15.25, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=edge] (82.center) to (85.center);
@@ -33,5 +33,6 @@
 		\draw (100.center) to (99.center);
 		\draw [style=edge] (110) to (109);
 		\draw [style=edge] (111) to (109);
+		\draw [style=edge] (112.center) to (113.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
