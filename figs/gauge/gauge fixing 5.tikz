@@ -67,7 +67,7 @@
 		\node [style=none] (577) at (21.25, 6.25) {};
 		\node [style=none] (578) at (16.5, -5.75) {};
 		\node [style=none] (579) at (16.5, 6.25) {};
-		\node [style=none] (580) at (21.25, -8) {};
+		\node [style=none] (580) at (21.25, -8.5) {};
 		\node [style=none] (581) at (16.5, 2.75) {};
 		\node [style=none] (582) at (13.75, 2.75) {};
 		\node [style=none, label={west:\small2}] (583) at (21.25, 4.5) {};

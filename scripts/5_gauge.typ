@@ -1,34 +1,32 @@
 #import "../import.typ": *
 
-#slide(title: "Steane & quantum Reed-Muller(QRM) code")[
-
-  #table(
-    align: (auto, center, center),
-    columns: (auto, auto, auto),
-    inset: 10pt,
-    [], [Steane], [QRM],
-    [qubits], $7$, $15$,
-    // [transversal gates], [$op("CNOT"), S, #strong[H]$], [$op("CNOT"), S, #strong[T]$]
-    [\# stabilizers], [6], [14]
-  )
-]
-
-
 #slide(title: "Steane & quantum Reed-Muller(QRM) code", )[
   #write_footer[Anderson, Jonas T. et al. “Fault-tolerant conversion between the Steane and Reed-Muller quantum codes.” Physical review letters 113 8]
 
-  #table(
-    align: (auto, center, center, center),
-    columns: (auto, auto, auto, auto),
-    inset: 10pt,
-    [], text(gray)[Steane], [ExSteane], [QRM],
-    [qubits], text(gray)[$7$], $15$, $15$,
-    // [transversal gates], text(gray)[$op("CNOT"), S, H$], [$op("CNOT"), S, #strong[H]$], [$op("CNOT"), S, #strong[T]$]
-    [\# stabilizers], text(gray)[6], [14], [14]
-  )
-  $E_"ex"=E_"steane" times.circle ket(Psi)$, where
-  $ ket(Psi):=1/sqrt(2)(ket(0)times.circle (E_"steane" ket(0))+ket(1) times.circle(E_"steane" ket(1))) $
-
+  #alternatives(repeat-last: true)[
+    #table(
+      align: (auto, center, center),
+      columns: (auto, auto, auto),
+      inset: 10pt,
+      [], [Steane], [QRM],
+      [qubits], $7$, $15$,
+      // [transversal gates], [$op("CNOT"), S, #strong[H]$], [$op("CNOT"), S, #strong[T]$]
+      [\# stabilizers], [6], [14]
+  )][
+    #table(
+      align: (auto, center, center, center),
+      columns: (auto, auto, auto, auto),
+      inset: 10pt,
+      [], text(gray)[Steane], [ExSteane], [QRM],
+      [qubits], text(gray)[$7$], $15$, $15$,
+      // [transversal gates], text(gray)[$op("CNOT"), S, H$], [$op("CNOT"), S, #strong[H]$], [$op("CNOT"), S, #strong[T]$]
+      [\# stabilizers], text(gray)[6], [14], [14]
+  )]
+  
+  #uncover(3)[
+    $E_"ex"=E_"steane" times.circle ket(Psi)$, where
+    $ ket(Psi):=1/sqrt(2)(ket(0)times.circle (E_"steane" ket(0))+ket(1) times.circle(E_"steane" ket(1))) $
+  ]
 ]
 
 #align(center + horizon)[#image("../figs/gauge/circ.png", width: 650pt)]
@@ -39,7 +37,11 @@
 
   / Gauge group: any subgroup $cal(G) < cal(P)_n$
   
+  #pause
+
   / Stabilizer group: $cal(S):= cal(N)(cal(G)) sect cal(G)={S in cal(G): S G = G S, forall G in cal(G)}$
+  
+  #pause
   
   / Gauge operators: $cal(L)_g:= cal(G) slash cal(S)$
   #h(10em)$tilde.equiv angle.l L_1^X, L_1^Z, ..., L_t^X, L_t^Z angle.r < cal(P)_n$
@@ -102,26 +104,21 @@
     #image("../figs/gauge/fixing/2.svg", width: 18em)][
     #image("../figs/gauge/fixing/3.svg", width: 29.5em)
       #place(dx: 20em, dy: -6em)[$=$]
-      #place(dx: 25em, dy: -6em)[$E_"ex"$]]
+      #place(dx: 25em, dy: -6em)[$E_"ex"$]][
+    #image("../figs/gauge/sub -> ex gauge.svg", width: 28.5em)
+      #place(dx: 15.5em, dy: -6em)[$=$]
+      #place(dx: 20.5em, dy: -6em)[$E_"ex"$]
+    ]
   #box[#place(dx: 2.5em, dy: -8em)[$E_"qrm"$]]
   #alternatives(position: top)[][
     / Step 1: measure gauge operators $L_1^X,L_2^X,L_3^X$, \ obtaining outcomes $k_1, k_2, k_3 in ZZ_2$.
     ][
     / Step 2: For each $k_i=1$, apply $L_i^Z$.
-    ][]
+    ][][]
 ]
-
-
-#slide(title: [Gauge fixing (QRM $->$ ExSteane)])[
-  #reset_footer()
-  #image("../figs/gauge/sub -> ex gauge.svg", width: 30em)
-    #place(dx: 2.5em, dy: -6em)[$E_"qrm"$]
-    #place(dx: 16.5em, dy: -6em)[$=$]
-    #place(dx: 22em, dy: -6em)[$E_"ex"$]
-]
-
 
 #slide(title: [Gauge fixing (QRM $->$ ExSteane, proof)])[
+  #reset_footer()
   #alternatives(position: horizon)[
     #image("../figs/gauge/gauge fixing.svg", width: 30em)
     #place(dx: 2.5em, dy: -6em)[$E_"sub"$]

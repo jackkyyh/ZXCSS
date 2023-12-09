@@ -19,11 +19,12 @@
 		\node [style=none] (17) at (-2, -2.25) {};
 		\node [style=none] (18) at (1, -0.75) {};
 		\node [style=none] (19) at (-0.5, 0.25) {};
-		\node [style=none] (20) at (1, 1.25) {};
+		\node [style=none] (20) at (1.5, 1.75) {};
 		\node [style=none] (21) at (-0.5, -0.25) {};
 		\node [style=none] (22) at (-0.5, -3.75) {};
 		\node [style=none] (23) at (4.75, -2.5) {};
-		\node [style=none] (24) at (3.25, 1.25) {};
+		\node [style=none] (24) at (4.75, 1.25) {};
+		\node [style=none] (25) at (3, -3.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=edge] (2) to (8);
@@ -51,8 +52,9 @@
 		\draw (3) to (19.center);
 		\draw [style=violet box] (20.center) to (21.center);
 		\draw [style=violet box] (21.center) to (22.center);
-		\draw [style=violet box] (22.center) to (23.center);
 		\draw [style=violet box] (23.center) to (24.center);
 		\draw [style=violet box] (24.center) to (20.center);
+		\draw [style=violet box] (22.center) to (25.center);
+		\draw [style=violet box] (25.center) to (23.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

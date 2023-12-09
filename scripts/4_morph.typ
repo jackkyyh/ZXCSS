@@ -10,6 +10,8 @@
 
   choose a subset $R subset Q$.
 
+  #pause
+
   / child code: $cal(C)_("child")$ whose stabilizers are
   $ cal(S)_("child"):={S in cal(S): op("supp")(S) subset R}. $
 ]
@@ -33,7 +35,7 @@
       #box(width: 19em)[2. Add an identity #text(red)[red] spider between each pair of unfused #text(olive)[green] spiders.]][
       #box(width: 22em)[3. let #text(purple)[$E_("child")$] be the subdiagram enclosed by $R$;\ let #text(blue)[$E_("morphed")$] be the subdiagram enclosed by $Q backslash R$]]
   ][
-    #alternatives()[
+    #alternatives(position: top+center)[
       #h(60pt)#text(purple)[$R={2,3,6,7}$]
       #image("../figs/morph/2367/1.svg", width: 8em)
       #h(90pt)$E_("parent")$][
@@ -58,7 +60,7 @@
 
 
 #slide(title: [Code morphing])[
-  $R={4,5,6,7}$
+  #text(purple)[$R={4,5,6,7}$]
   // #set align(center)
   
   #one-by-one(start: 1)[

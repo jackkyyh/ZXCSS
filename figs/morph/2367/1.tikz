@@ -19,11 +19,11 @@
 		\node [style=none] (17) at (-2, -2.25) {};
 		\node [style=none] (18) at (1, -0.25) {};
 		\node [style=none] (19) at (-0.5, 0.75) {};
-		\node [style=none] (20) at (-1.5, 4.5) {};
+		\node [style=none] (20) at (-2.5, 4.5) {};
 		\node [style=none] (21) at (-2.5, 0.5) {};
 		\node [style=none] (22) at (0, -1.25) {};
 		\node [style=none] (23) at (3, 0.5) {};
-		\node [style=none] (24) at (1.5, 4.5) {};
+		\node [style=none] (24) at (3, 4.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=edge] (2) to (8);

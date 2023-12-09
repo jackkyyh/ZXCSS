@@ -24,7 +24,7 @@
 
 #new-section-slide[Overview]
 
-// #include "0_overview.typ"
+#include "scripts/0_overview.typ"
 
 #new-section-slide[Quantum Error Correction]
 
