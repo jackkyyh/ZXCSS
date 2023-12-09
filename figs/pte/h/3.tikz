@@ -2,13 +2,13 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=red small] (299) at (7.25, -2) {};
 		\node [style=green small] (300) at (6.5, -4.25) {};
-		\node [style=green small] (301) at (6.5, -3.5) {};
+		\node [style=green small] (301) at (6.5, -2.75) {};
 		\node [style=green small] (302) at (9, -2) {};
 		\node [style=red small] (303) at (8.25, -3.5) {};
 		\node [style=red small] (304) at (8.25, -2.75) {};
 		\node [style=red small] (305) at (10.775, -2) {};
 		\node [style=green small] (306) at (10.025, -4.25) {};
-		\node [style=green small] (307) at (10.025, -3.5) {};
+		\node [style=green small] (307) at (10.025, -2.75) {};
 		\node [style={green small (text)}] (308) at (7.275, -0.75) {$\pi/2$};
 		\node [style={red small (text)}] (309) at (9.025, -0.75) {$\pi/2$};
 		\node [style={green small (text)}] (310) at (10.775, -0.75) {$\pi/2$};

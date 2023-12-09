@@ -42,7 +42,7 @@
 		\node [style=none] (289) at (11, -1) {};
 		\node [style=none] (290) at (11, -2) {};
 		\node [style=none] (291) at (11.5, -1.35) {$\vdots$};
-		\node [style=none] (292) at (5.75, 0) {};
+		\node [style=none] (292) at (6.75, 0) {};
 		\node [style=red] (293) at (8, 5.5) {};
 		\node [style=red] (294) at (8, 3.5) {};
 		\node [style=red] (295) at (8, 1.75) {};

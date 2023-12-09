@@ -1,7 +1,7 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=red small] (24) at (0.5, 2.75) {};
-		\node [style=green small] (25) at (-0.5, 1) {};
+		\node [style=green small] (25) at (-0.5, 1.75) {};
 		\node [style=green small] (26) at (-0.5, 0.25) {};
 		\node [style={green small (text)}] (112) at (0.5, 4) {$\pi/4$};
 		\node [style=none] (124) at (-1.75, 1.75) {};

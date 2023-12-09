@@ -1,18 +1,18 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=red small] (331) at (-4.25, -0.75) {};
-		\node [style=green small] (333) at (-4.25, 0) {};
+		\node [style=green small] (333) at (-4.25, 0.75) {};
 		\node [style=green small] (334) at (1.75, 0) {};
 		\node [style=red small] (336) at (1.75, 0.75) {};
 		\node [style={green small (text)}] (340) at (-3.225, -0.75) {$\pi/2$};
 		\node [style={red small (text)}] (341) at (0.525, 0) {$\pi/2$};
 		\node [style=red small] (343) at (-2, -0.75) {};
-		\node [style=green small] (344) at (-2, 0) {};
+		\node [style=green small] (344) at (-2, 0.75) {};
 		\node [style=red small] (345) at (3, -0.75) {};
-		\node [style=green small] (346) at (3, 0) {};
+		\node [style=green small] (346) at (3, 0.75) {};
 		\node [style={green small (text)}] (347) at (4.275, -0.75) {$\pi/2$};
 		\node [style=red small] (348) at (5.5, -0.75) {};
-		\node [style=green small] (349) at (5.5, 0) {};
+		\node [style=green small] (349) at (5.5, 0.75) {};
 		\node [style=green small] (350) at (-0.75, 0) {};
 		\node [style=red small] (351) at (-0.75, 0.75) {};
 		\node [style=none] (352) at (-5, 0.75) {};

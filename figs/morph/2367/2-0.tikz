@@ -50,8 +50,8 @@
 		\draw (20) to (7);
 		\draw (7) to (21);
 		\draw (21) to (6);
-		\draw (20) to (9);
-		\draw (21) to (10);
+		\draw [style=thick width] (20) to (9);
+		\draw [style=thick width] (21) to (10);
 		\draw [style=violet box] (24.center)
 			 to (25.center)
 			 to (26.center)
