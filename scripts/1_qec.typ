@@ -21,7 +21,7 @@
   uncover("2-")[$cal(S):=angle.l Z Z I, Z I Z angle.r$],
   uncover("2-")[$=>cal(C) &={alpha ket(000)+beta ket(111): alpha, beta in CC}\
             &=op("span"){ket(000), ket(111)}
-            tilde.equiv cal(H)^(times.circle 1)$],
+            tilde.equiv cal(H)^(times.circle 1)#h(-5pt)=op("span"){ket(0), ket(1)}$],
   uncover("3-")[$cal(S):=angle.l Z Z, X X angle.r$],
   uncover("3-")[$=>cal(C) ={1 / sqrt(2)(ket(00)+ket(11))}tilde.equiv cal(H)^(times.circle 0)$],
   uncover("4-")[$cal(S):=angle.l Z Z Z Z, X X X X angle.r $],
@@ -56,22 +56,26 @@
 #slide(title: [Logical operators])[
   #let la = xarrow.with(sym: sym.arrow, width: 50pt)
 
-  $ket(alpha) la(U) ket(beta)$\
+  $ket(alpha) la(U) ket(beta) quad in cal(H)^(times.circle k)$\
   #pause
   $#rotate(90deg)[$-->$] #h(-10pt) #text(0.7em)[$E$] #h(55pt)
   #rotate(90deg)[$-->$] #h(-10pt) #text(0.7em)[$E$]$\
-  $ket(overline(alpha))#uncover("3-")[$la(overline(U)?)$]ket(overline(beta))$
+  $ket(overline(alpha))#uncover("3-")[$la(overline(U)?)$]ket(overline(beta))quad in cal(H)^(times.circle n)$
   
   #pause#pause
 
-  $=> overline(U) E = E U$ or $overline(U):=E U E^dagger$
+  $=> overline(U) E = E U$
+  
+  #pause
+
+  $=> overline(U):=E U E^dagger$: *logical operators*
 
   #pause
   
   / Logical Paulis: $overline(P) = E P E^dagger, forall P in cal(P)_k$
 
   #pause
-  #place(dx: 470pt, dy: -250pt)[
+  #place(dx: 470pt, dy: -260pt)[
     #cbox[$[|n, k, d|]$ notation:
 
     #h(20pt)$k cases(#hide[1],#hide[1])$#h(-10pt)
@@ -85,15 +89,17 @@
     #h(20pt)$d:= min\{op("wt")(overline(P))\}$
     ]]
 
-  #pause
+  // #pause
 
-  In general, $overline(U)$ can be very complicated!
+  // In general, $overline(U)$ can be very complicated!
 ]
 
 #slide(title: [Logical operators])[
   #reset_footer()
   $overline(U) E = E U$
 
+  #pause
+  
   #image("../figs/pte/UE=EU.svg", width: 600pt)
   #place(dx:30pt, dy:-60pt)[
     $dots.v #h(35pt) U #h(40pt) dots.v #h(40pt)

@@ -43,8 +43,8 @@
   
   #pause
   
-  / Gauge operators: $cal(L)_g:= cal(G) slash cal(S)$
-  #h(10em)$tilde.equiv angle.l L_1^X, L_1^Z, ..., L_t^X, L_t^Z angle.r < cal(P)_n$
+  / Gauge operators: $cal(L)_g:= cal(G) backslash cal(S)$
+  #h(10em)$= angle.l L_1^X, L_1^Z, ..., L_t^X, L_t^Z angle.r tilde.equiv cal(P)_t$
   
   #place(dx: 590pt, dy: -20pt)[#image("../figs/gauge/venn.svg", width: 130pt)]
   #place(dx: 655pt, dy: -30pt)[$cal(G)$]
@@ -53,6 +53,7 @@
 
 #slide(title: "Subsystem code encoders as ZX diagrams")[
   #reset_footer()
+  #pause
   #align(center)[#image("../figs/gauge/subsys.svg", width: 300pt)]
 ]
 
@@ -69,6 +70,14 @@
   #align(right)[#image("../figs/gauge/vecc.svg", width: 200pt)]]
   #place(dx: 605pt, dy: -10pt)[$cal(S)_"ex"$ #h(85pt) $cal(S)_"qrm"$]
   #place(dx: 620pt, dy: 65pt)[$cal(S)_"sub"$]
+]
+
+
+#slide(title: "ExSteane")[
+  #pause
+  #align(center)[#image("../figs/gauge/sub -> ex.svg", width: 25em)]
+  #place(dx: 6em, dy: -6em)[
+    $E_"sub" #h(200pt) = #h(130pt) E_"ex"$]
 ]
 
 #slide(title: "QRM")[
@@ -89,14 +98,8 @@
     #box(baseline: 50%)[#image("../figs/gauge/sub -> qrm proof 4.svg", width: 5.2em)]]
 ] 
 
-#slide(title: "ExSteane")[
-  #align(center)[#image("../figs/gauge/sub -> ex.svg", width: 25em)]
-  #place(dx: 6em, dy: -6em)[
-    $E_"sub" #h(200pt) = #h(130pt) E_"ex"$]
-]
-
 #slide(title: [Gauge fixing (QRM $->$ ExSteane)], )[
-  #write_footer[Vuillot, Christophe et al. “Code deformation and lattice surgery are gauge fixing.” New Journal of Physics 21 (2018): n. pag.]
+  #write_footer[Vuillot, Christophe et al. “Code deformation and lattice surgery are gauge fixing.” New Journal of Physics 21 (2018)]
 
   #alternatives[
     #image("../figs/gauge/fixing/0.svg", width: 18em)][

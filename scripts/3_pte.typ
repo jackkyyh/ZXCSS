@@ -16,20 +16,17 @@
   #uncover(2)[#cbox[Given a ZX diagram $D$, what is the corresponding diagram $overline(D)$,\ such that the above equation holds?]]
 ]
 
-
 #slide(title: [Lemma: PTE])[
-  #image("../figs/pte/simple.svg", width: 550pt)
-
-  #align(right)[assuming $overline(X)_1=X_1 X_2$]
-]
-
-
-#slide(title: [Lemma: PTE])[
-  #image("../figs/pte/more wires.svg", width: 350pt)
-]
-
-#slide(title: [Lemma: PTE])[
-  #image("../figs/pte/general.svg", width: 550pt)
+  #alternatives(position: top)[
+    #image("../figs/pte/simple.svg", width: 550pt)
+    #align(right)[assuming $overline(X)_1=X_1 X_2$]
+  ][
+    #image("../figs/pte/more wires.svg", width: 350pt)
+  ][
+    #image("../figs/pte/more more general.svg", width: 550pt)
+  ][
+    #image("../figs/pte/simple.svg", width: 550pt)
+  ]
 ]
 
 #slide(title: [The $[| 4, 2, 2 |]$ code])[
@@ -42,6 +39,8 @@
 ]
 
 #slide(title: [Example: $overline(X)_1$])[
+  #place(dx: 650pt, dy: 220pt)[#text(0.7em)[
+    $overline(X)_1=X_1 X_2,\ overline(Z)_1=Z_1 Z_3$]]
 
   #box(image("../figs/pte/x/1.svg", width: 7em), baseline: 50%)
   #pause
@@ -53,6 +52,9 @@
 ]
 
 #slide(title: [Example: $X_1 X_2$ measurement])[
+  #place(dx: 650pt, dy: 220pt)[#text(0.7em)[
+    $overline(X)_1=X_1 X_2,\ overline(Z)_1=Z_1 Z_3$]]
+
   #box(image("../figs/pte/Mx/3.svg", width: 7em), baseline: 50%)
   #pause
   #h(.5em)#eqt[unfusion]#h(.5em)
@@ -65,8 +67,8 @@
 
 
 #slide(title: [Example: $overline(T)$ gate])[
-  #uncover("2-")[#place(dx: 650pt, dy: 220pt)[#text(0.7em)[
-    $overline(X)_1=X_1 X_2,\ overline(Z)_1=Z_1 Z_3$]]]
+  #place(dx: 650pt, dy: 220pt)[#text(0.7em)[
+    $overline(X)_1=X_1 X_2,\ overline(Z)_1=Z_1 Z_3$]]
 
   #box(image("../figs/pte/t/1.svg", width: 7em), baseline: 50%)
   #pause
@@ -79,6 +81,8 @@
 ]
 
 #slide(title: [Example: $overline(H)$ gate])[
+  #place(dx: 650pt, dy: 220pt)[#text(0.7em)[
+    $overline(X)_1=X_1 X_2,\ overline(Z)_1=Z_1 Z_3$]]
   #box(image("../figs/pte/h/1.svg", height: 100pt), baseline: 40%)
   #pause
   #h(.3em)#eqt[Euler]#h(.3em)

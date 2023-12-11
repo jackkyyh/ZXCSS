@@ -8,7 +8,7 @@
   Given a *parent code* $cal(C)_("parent")$,
   with stabilizers $cal(S)$ and physical qubits $Q$,
 
-  choose a subset $R subset Q$.
+  Choose a subset $R subset Q$.
 
   #pause
 
@@ -18,10 +18,22 @@
 
 #slide(title: "Code morphing")[
 
-  Consider the encoders $E_("parent")$ and $E_("child")$, which are Cliffords,
+  Consider the encoders $E_("parent")$ and $E_("child")$,
 
   / morphed code: $cal(C)_("morphed")$ whose encoder is
-  $ E_("morphed"):= (#text(gray)[$I^(times.circle|Q backslash R|)times.circle$]  E^dagger_("child"))E_("parent"). $
+  $ E_("morphed"):= (I^(times.circle|Q backslash R|)times.circle  E^dagger_("child"))E_("parent"). $
+]
+
+#slide(title: "Code morphing")[
+  #stean_arrows
+
+  #stean_reprs
+
+  #pause
+  #place(dx: -13pt, dy: -10pt)[#ellipse(width: 180pt, height: 130pt, stroke: 3pt+red)]
+
+  #pause
+  #place(dx: 570pt, dy: -80pt)[#ellipse(width: 200pt, height: 210pt, stroke: 3pt+red)]
 ]
 
 #slide(title: "Code morphing")[
@@ -31,7 +43,7 @@
   Given an encoder $E_("parent") $ and a subset $R subset Q$,
 
     #alternatives[][
-      #box(width: 19em)[1. Unfuse all #text(olive)[green] spiders which are supported *partially* on $R$.]][
+      #box(width: 19em)[1. Unfuse all #text(olive)[green] spiders whose legs span across the boundary of $R$.]][
       #box(width: 19em)[2. Add an identity #text(red)[red] spider between each pair of unfused #text(olive)[green] spiders.]][
       #box(width: 22em)[3. let #text(purple)[$E_("child")$] be the subdiagram enclosed by $R$;\ let #text(blue)[$E_("morphed")$] be the subdiagram enclosed by $Q backslash R$]]
   ][

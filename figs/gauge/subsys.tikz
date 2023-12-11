@@ -42,6 +42,10 @@
 		\node [style=none] (143) at (-3.25, -4) {};
 		\node [style=none] (144) at (-3.25, -5) {};
 		\node [style=none] (145) at (-2.75, -4.35) {$\vdots$};
+		\node [style=none] (146) at (-8.5, 4.75) {};
+		\node [style=none] (147) at (-8.5, 1) {};
+		\node [style=none] (148) at (-2, 1) {};
+		\node [style=none] (149) at (-2, 4.75) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (4) to (73.center);
@@ -67,5 +71,9 @@
 		\draw (135.center) to (35);
 		\draw (142) to (143.center);
 		\draw (142) to (144.center);
+		\draw [style=violet box] (146.center) to (147.center);
+		\draw [style=violet box] (147.center) to (148.center);
+		\draw [style=violet box] (148.center) to (149.center);
+		\draw [style=violet box] (149.center) to (146.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

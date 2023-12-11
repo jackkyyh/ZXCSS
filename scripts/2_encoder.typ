@@ -22,6 +22,8 @@
 
   / CSS codes: stabilizer codes whose stabilizers can be divided into\ 2 types: *X-type* or *Z-type*.
   
+  #pause
+  
   #align(center)[#cbox[Every CSS code encoder is a phase-free ZX diagram.]]
 ]
 
